@@ -1,0 +1,28 @@
+
+
+.container {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+
+.container::before {
+  display: block;
+  content: "";
+  background: url("/public/login.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.forms {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: var(--gray-100);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

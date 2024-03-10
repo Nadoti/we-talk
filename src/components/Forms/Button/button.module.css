@@ -1,0 +1,17 @@
+
+.btn {
+  width: 100%;
+  padding: var(--spacing-10);
+  border: none;
+  border-radius: 8px;
+  background: var(--blue-300);
+  font-size: var(--text-20);
+  color: var(--white);
+  font-weight: bold;
+  font-family: roboto;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background: var(--blue-700);
+}

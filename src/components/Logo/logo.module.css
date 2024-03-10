@@ -1,0 +1,8 @@
+
+
+.logo {
+  font-size: var(--text-50);
+  font-weight: bold;
+  color: var(--blue-300);
+  font-family: roboto;
+}
