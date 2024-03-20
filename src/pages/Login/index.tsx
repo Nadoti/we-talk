@@ -19,7 +19,7 @@ export function Login() {
           <form className={styles.form}>
             <Input label="E-mail" type="email"/>
             <Input label="Senha" type="password"/>
-            <Button>Login</Button>
+            <Button type="submit">Entrar</Button>
           </form>
           <div className={styles["nav-container"]}>
             <p className={styles.nav}>Esqueceu Senha? clique <Link to="/user/forget">aqui</Link></p>
