@@ -1,4 +1,4 @@
-import { Cog, Send, SendHorizontal, Video } from "lucide-react"
+import { Cog, Send, Video } from "lucide-react"
 import styles from "./chat.module.css"
 
 export function Chat() {
