@@ -23,9 +23,11 @@
 }
 
 .title {
-  font-size: var(--text-30);
+  font-size: var(--text-40);
   margin-top: var(--spacing-40);
   margin-bottom: var(--spacing-20);
+  color: var(--gray-500);
+  font-family: monospace;
 }
 
 .form {

@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Login } from "../Login";
 import { Register } from "../Register";
-import imagem from '/login.jpg'
 import styles from "./home.module.css"
 import { PageError } from "../Error";
 
@@ -16,7 +15,6 @@ export function Home() {
           <Route path="*" element={<PageError />} />
         </Routes>
       </div>
-
     </section>
   )
 }
