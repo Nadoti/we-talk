@@ -4,7 +4,7 @@
   padding: var(--spacing-10);
   border: none;
   border-radius: 8px;
-  background: var(--blue-300);
+  background: #6B33D9;
   font-size: var(--text-20);
   color: var(--white);
   font-weight: bold;
@@ -13,5 +13,8 @@
 }
 
 .btn:hover {
-  background: var(--blue-700);
+  background: #490DA9;
+}
+.btn:disabled {
+  cursor: not-allowed;
 }

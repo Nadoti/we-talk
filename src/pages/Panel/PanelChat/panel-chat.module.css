@@ -7,14 +7,14 @@
 .title {
   font-size: var(--text-30);
   color: var(--gray-100);
+  padding-left: 4rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  padding-top: 6rem;
+  padding-top: 4rem;
   gap: 4rem;
-  
 }
 
 .subgroup {
@@ -22,11 +22,34 @@
   min-height: 50rem;
 }
 
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.newGroup {
+  display: block;
+  background: none;
+  border: none;
+  font-size: var(--text-12);
+  color: var(--gray-500);
+  padding: .7rem 1rem;
+  border-radius: 8px;
+  transition: all .3s;
+}
+
+.newGroup:hover {
+  color: var(--gray-300);
+  background: #3D364A;
+}
 
 .subtitle {
   font-size: var(--text-20);
   color: var(--gray-300);
-  margin-bottom: 2rem;
+  padding-left: 4rem;
 }
 
 .contacts {
@@ -37,6 +60,7 @@
   max-height: 50rem;
   overflow-y: auto;
   padding-right: 1rem;
+  padding-left: 2rem;
 }
 
 .containerContacts {
@@ -104,4 +128,10 @@
   background: #BDA6EC;
   border-radius: 100%;
   font-weight: bold;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

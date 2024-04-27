@@ -1,15 +1,19 @@
-import { NavLink } from "react-router-dom"
-import { Logo } from "../../Logo"
-import styles from "./navbar.module.css"
 import { LogOut, MessagesSquare, Settings, UsersRound } from "lucide-react"
+import { NavLink, useNavigate } from "react-router-dom"
+import styles from "./navbar.module.css"
+import { auth } from "../../../firebase/firebase"
+import { useUserStore } from "../../../store/userStore"
 
 
 
 export function Navbar() {
-  
+  const navigate = useNavigate()
+  const { currentUser } = useUserStore()
   return (
     <aside className={styles.container}>
-      <Logo />
+      <span className={styles.logo}>
+        We-Talk
+      </span>
       <ul className={styles.listNav}>
         <li className={styles.nav}>
           <NavLink 
@@ -26,7 +30,7 @@ export function Navbar() {
             className={({ isActive }) =>
               isActive ? `${styles.link} ${styles.active}` : styles.link
             }
-            to="groups"
+            to="users"
           >
             <UsersRound />
           </NavLink>
@@ -41,10 +45,13 @@ export function Navbar() {
             <Settings />
           </NavLink>
         </li>
-        <button className={styles.logOut}><LogOut /></button>
+        <button className={styles.logOut} onClick={() => {
+          auth.signOut()
+          navigate("/user/login")
+        }}><LogOut /></button>
       </ul>
       <div className={styles.containerImage}>
-        <img src="https://images.unsplash.com/photo-1710432157519-e437027d2e8f?q=80&w=2731&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <img src={currentUser.photoURL} alt="photo" />
       </div>
     </aside>
   )

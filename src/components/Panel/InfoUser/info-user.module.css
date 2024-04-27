@@ -1,0 +1,50 @@
+
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #373241;
+  position: relative;
+}
+
+.closeModal {
+  padding: 1rem;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--gray-200);
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  transition: all .3s;
+}
+
+.closeModal:hover {
+  background: #1E1B24;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 8rem;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: var(--text-16);
+  color: var(--gray-300);
+  font-weight: 700;
+}
+
+.email {
+  font-size: var(--text-16);
+  color: #6FC5B4;
+  font-weight: 700;
+}

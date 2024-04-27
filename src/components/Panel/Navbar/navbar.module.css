@@ -77,3 +77,10 @@
     border-radius: 50%;
   }
 }
+
+.logo {
+  font-size: clamp(var(--text-12), 8vw, var(--text-20));
+  font-weight: bold;
+  color: #52358C;
+  font-family: roboto;
+}

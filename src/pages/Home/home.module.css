@@ -10,7 +10,7 @@
 .container::before {
   display: block;
   content: "";
-  background: url("/public/login.jpg") no-repeat center center;
+  background: url("/login1.jpg") no-repeat center center;
   background-size: cover;
 }
 
